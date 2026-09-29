@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container mt-4">
+    <h2>Comments</h2>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Task ID</th>
+                <th>User ID</th>
+                <th>Comment</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var comment in Model)
+            {
+                <tr>
+                    <td>@comment.CommentId</td>
+                    <td>@comment.TaskId</td>
+                    <td>@comment.UserId</td>
+                    <td>@comment.CommentText</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

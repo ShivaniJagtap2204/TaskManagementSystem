@@ -1,0 +1,59 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model MODEL.TaskItem
+<h2>Create Task</h2>
+
+<form method="post">
+    
+    <div class="mb-3">
+        <label>Title</label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Description</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label>Assigned To</label>
+        <input asp-for="AssignedTo" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Assigned By</label>
+        <input asp-for="AssignedBy" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Team ID</label>
+        <input asp-for="TeamId" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Priority</label>
+        <input asp-for="Priority" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Status</label>
+        <input asp-for="Status" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Deadline</label>
+        <input asp-for="Deadline" type="datetime-local" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Create Task
+    </button>
+
+    <a href="/Tasks" class="btn btn-secondary">
+        Back
+    </a>
+
+</form>

@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2>Create User</h2>
+
+<form method="post">
+
+    <div class="mb-3">
+        <label>Full Name</label>
+        <input name="FullName" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label>Email</label>
+        <input name="Email" type="email" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label>Password</label>
+        <input name="PasswordHash" type="password" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label>Role ID</label>
+        <input name="RoleId" type="number" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label>Active</label>
+        <input name="IsActive" type="checkbox" value="true" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Create</button>
+
+</form>

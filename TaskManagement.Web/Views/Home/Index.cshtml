@@ -1,0 +1,97 @@
+﻿
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container mt-4">
+
+    <h2 class="mb-4">Task Management Dashboard</h2>
+
+    <div class="row">
+
+        <!-- Users -->
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5>Users</h5>
+                    <h2>@Model.UsersCount</h2>
+
+                    <a href="/Users" class="btn btn-primary">
+                        View Users
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Teams -->
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5>Teams</h5>
+                    <h2>@Model.TeamsCount</h2>
+
+                    <a href="/Teams" class="btn btn-primary">
+                        View Teams
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Members -->
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5>Team Members</h5>
+
+                    <a href="/TeamMembers" class="btn btn-primary">
+                        View Team Members
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tasks -->
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5>Tasks</h5>
+                    <h2>@Model.TasksCount</h2>
+
+                    <a href="/Tasks" class="btn btn-primary">
+                        View Tasks
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notifications -->
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5>Notifications</h5>
+                    <h2>@Model.NotificationsCount</h2>
+
+                    <a href="/Notifications" class="btn btn-primary">
+                        View Notifications
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comments -->
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5>Comments</h5>
+
+                    <a href="/Comments" class="btn btn-primary">
+                        View Comments
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
